@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correlation App</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #1038BE; /* Text color */
+        }
+
+        .container {
+            padding: 50px;
+        }
+
+        #welcome {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        #prompt {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #top-left-image {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            max-width: 150px; /* Adjust the size as needed */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="text-center" id="welcome">Welcome to the Correlation Unit Indicator</h1>
+        <div id="prompt" class="text-center">Enter the Device:</div>
+        <form action="/result" method="post">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" name="user_input" required>
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+        <div style="text-align: center;">
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/analog-devices-01-logo-png-transparent.png" width="500" height="500">
+    </div>
+
+    <!-- Bootstrap JS and dependencies (for form styling) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-Uo7kR+9XIeZ5n6IRmHx/zMp4U8QxPdb2J5q0W49du7EEn/6Zg1NIS7wPjCyM49Pb" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
